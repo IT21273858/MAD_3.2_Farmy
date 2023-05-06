@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activityprofile">
+
+
+    <TextView
+        android:id="@+id/c_name_home"
+        android:layout_width="126dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/caveat"
+        android:text="@string/app_name"
+        android:textColor="@color/Farmy_logo"
+        android:textSize="@dimen/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_home"
+        android:layout_width="129dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="392dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="22dp"
+        app:cardBackgroundColor="#BBF39D"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_home">
+
+        <TextView
+            android:id="@+id/heal_crop"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/caveat"
+            android:text="@string/heal_crop"
+            android:textSize="40sp" />
+
+        <ImageButton
+            android:id="@+id/heal_btn"
+            android:layout_width="94dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="10dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/scan" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="392dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#B1FFD8"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <Button
+            android:id="@+id/view_price"
+            android:layout_width="272dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#CCAA05"
+            android:text="@string/view_price"
+            android:textColor="@color/view_pricebtn"
+            android:textSize="@dimen/product_desc"
+            app:cornerRadius="15dp" />
+
+        <ImageButton
+            android:id="@+id/prd_btn"
+            android:layout_width="98dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chili" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="392dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#4189BC"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:id="@+id/weather_ln"
+            android:layout_width="94dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="243dp"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/weather_ln"
+            android:textSize="@dimen/weather_ln"
+            app:layout_constraintEnd_toStartOf="@+id/weather_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weather_l" />
+
+        <TextView
+            android:id="@+id/weather_temp"
+            android:layout_width="110dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="104dp"
+            android:fontFamily="@font/oxygen"
+            android:text="@string/weather_temp"
+            android:textSize="@dimen/weather_temp"
+            app:layout_constraintEnd_toStartOf="@+id/weather_primg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weather_ln" />
+
+        <TextView
+            android:id="@+id/weather_pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/oxygen"
+            android:text="@string/weather_pr"
+            android:textColor="@color/weather_pr"
+            android:textSize="@dimen/weather_pr"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weather_temp" />
+
+        <TextView
+            android:id="@+id/weather_desc"
+            android:layout_width="400dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="1dp"
+            android:fontFamily="@font/stardos_stencil"
+            android:text="@string/weather_desc"
+            android:textColor="@color/weather_desc"
+            android:textSize="@dimen/weather_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weather_sunset" />
+
+        <TextView
+            android:id="@+id/weather_hm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/weather"
+            android:textSize="24sp" />
+
+
+        <ImageButton
+            android:id="@+id/img_weather"
+            android:layout_width="105dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/rains" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="389dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#D5D6D6"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <Button
+            android:id="@+id/view_post"
+            android:layout_width="272dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#C5A5FD"
+            android:text="@string/post_descs"
+            android:textColor="@color/view_pricebtn"
+            android:textSize="@dimen/product_desc"
+            app:cornerRadius="15dp" />
+
+
+        <TextView
+            android:id="@+id/weather_hm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/post_desc"
+            android:textSize="24sp" />
+
+
+        <ImageButton
+            android:id="@+id/img_chat"
+            android:layout_width="98dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chats" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

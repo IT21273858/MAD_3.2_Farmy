@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Grocery">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/logo_login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c_name_l"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo1" />
+
+        <TextView
+            android:id="@+id/City"
+            android:layout_width="230dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/cherry_swash"
+            android:gravity="left"
+            android:text="@string/product"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="@string/product_add"
+        android:textColor="@color/product_details"
+        android:textSize="@dimen/product_details" />
+
+    <EditText
+        android:id="@+id/idEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lavender_border"
+        android:hint="@string/product_id"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/product_add"
+        android:textColorHint="@color/product_add" />
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintop_product"
+        android:background="@drawable/lavender_border"
+        android:hint="@string/name"
+        android:padding="8dp"
+        android:textColor="@color/product_add"
+        android:textColorHint="@color/product_add" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintop_product"
+        android:background="@drawable/lavender_border"
+        android:hint="@string/price_add"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColor="@color/product_add"
+        android:textColorHint="@color/product_add" />
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintop_product"
+        android:background="@drawable/lavender_border"
+        android:hint="@string/quantity"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/product_add"
+        android:textColorHint="@color/product_add" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/login_bc"
+        android:onClick="@string/add_item"
+        android:text="@string/addbtn"
+        android:textSize="@dimen/login"
+        app:cornerRadius="30dp" />
+
+    <ListView
+        android:id="@+id/productsListView"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/login_bc"
+        android:enabled="false"
+        android:text="@string/update_product"
+        android:textSize="@dimen/login"
+        app:cornerRadius="30dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/login_bc"
+        android:enabled="false"
+        android:text="@string/delete_product"
+        android:textSize="@dimen/login"
+        app:cornerRadius="30dp" />
+
+</LinearLayout>
+
+

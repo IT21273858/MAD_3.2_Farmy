@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="market_til">#0A5116</color>
+    <color name="item_head">#171616</color>
+    <color name="quantity">#92FD59</color>
+    <color name="price">#92FD59</color>
+    <color name="quantity_val">#3A3030</color>
+    <color name="price_rang">#1C0E0E</color>
+    <color name="c_name">#817B7B</color>
+    <color name="market_arr">#473D3D</color>
+    <color name="location">#1B0606</color>
+    <color name="market_ln">#221818</color>
+    <color name="c_qnt">#5A5858</color>
+    <color name="c_price">#535151</color>
+    <color name="Farmy_logo">#433F3F</color>
+    <color name="login_bc">#AAE894</color>
+    <color name="sign_in">#4DF6A0</color>
+    <color name="update">#4DF6A0</color>
+    <color name="cancel_bc">#AAE894</color>
+    <color name="reset_bc">#AAE894</color>
+    <color name="border">#68F38E</color>
+    <color name="Farmy_wlc">#68F38E</color>
+    <color name="view_pricebtn">#FF0C0C0C</color>
+    <color name="weather_pr">#2C2929</color>
+    <color name="weather_desc">#B2050505</color>
+    <color name="scan_bn">#61EA30</color>
+    <color name="product_add">#030303</color>
+    <color name="product_details">#7C6F6E</color>
+    <color name="u_name">#978A89</color>
+    <color name="signup_hint">#000000</color>
+    <color name="signin">#151816</color>
+    <color name="login_hint">#000000</color>
+    <color name="blog_hint">#000000</color>
+    <color name="weather">#F5EDED</color>
+
+</resources>

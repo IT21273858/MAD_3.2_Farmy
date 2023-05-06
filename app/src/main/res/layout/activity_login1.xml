@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/c_name_l"
+                    android:layout_width="170dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/caveat"
+                    android:text="@string/app_name"
+                    android:textColor="@color/Farmy_logo"
+                    android:textSize="@dimen/logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/logo_login"
+                    android:layout_width="129dp"
+                    android:layout_height="116dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="90dp"
+                    android:baselineAligned="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/c_name_l"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/welcome2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="150dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/cherry_swash"
+                android:paddingStart="100sp"
+                android:text="@string/welcome"
+                android:textColor="@color/Farmy_wlc"
+                android:textSize="@dimen/welcome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/c_name_l" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/login_username"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:drawableLeft="@drawable/baseline_person_pin_24"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/username"
+                    android:padding="8dp"
+                    android:textColor="@color/market_til"
+                    android:textColorHint="@color/login_hint"
+                    android:textSize="@dimen/u_name" />
+
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/password"
+                    android:padding="8dp"
+                    android:textColor="@color/market_ln"
+                    android:textColorHint="@color/login_hint"
+                    android:textSize="@dimen/u_pwd" />
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/login_bc"
+                    android:text="Login"
+                    android:textSize="@dimen/login"
+                    app:cornerRadius="30dp" />
+
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:padding="8dp"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/market_arr"
+                    android:textSize="@dimen/forgot" />
+
+                <TextView
+                    android:id="@+id/signupRedirectText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:padding="8dp"
+                    android:text="Not yet registered? Signup"
+                    android:textColor="@color/market_arr"
+                    android:textSize="@dimen/signup_nyet" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

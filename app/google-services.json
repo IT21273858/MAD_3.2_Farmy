@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "257001546949",
+    "project_id": "farmy-61e4c",
+    "storage_bucket": "farmy-61e4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257001546949:android:3e64d42a663e9c3c4a7cac",
+        "android_client_info": {
+          "package_name": "com.example.farmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257001546949-0ogs7lru3lopj98jq5booaiteuj8m6tp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP6kSDrz9m8Cx7IvkmonSlWbGqfjmreEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257001546949-0ogs7lru3lopj98jq5booaiteuj8m6tp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

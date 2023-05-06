@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="413dp"
+        android:layout_height="145dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/c_name_l"
+            android:layout_width="170dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/caveat"
+            android:text="@string/app_name"
+            android:textColor="@color/Farmy_logo"
+            android:textSize="@dimen/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo_login"
+            android:layout_width="129dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="90dp"
+            android:baselineAligned="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c_name_l"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/welcome2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="150dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/cherry_swash"
+            android:paddingStart="100sp"
+            android:text="@string/product"
+            android:textColor="@color/Farmy_wlc"
+            android:textSize="@dimen/welcome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_name_l" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="374dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+        <ListView
+            android:id="@+id/productsListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:ems="10"
+            android:text="@string/product_description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="@dimen/product_details" />
+
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:layout_marginStart="12sp"
+            android:background="@drawable/lavender_border"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#1515F6"
+            android:textSize="@dimen/product_details" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/editItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/edit_product"
+        android:textSize="24sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
